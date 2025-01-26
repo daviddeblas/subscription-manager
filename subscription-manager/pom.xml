@@ -42,23 +42,6 @@
 			<artifactId>jakarta.mail</artifactId>
 			<version>2.0.1</version>
 		</dependency>
-		<!-- For the aspects -->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-aop</artifactId>
-		</dependency>
-
-		<!-- For request limitation -->
-		<dependency>
-			<groupId>com.github.vladimir-bukhtoyarov</groupId>
-			<artifactId>bucket4j-core</artifactId>
-			<version>7.3.0</version>
-		</dependency>
-		<dependency>
-			<groupId>com.github.vladimir-bukhtoyarov</groupId>
-			<artifactId>bucket4j-jcache</artifactId>
-			<version>7.3.0</version>
-		</dependency>
 
 
 		<!-- Spring Boot Security with OAuth2 -->
