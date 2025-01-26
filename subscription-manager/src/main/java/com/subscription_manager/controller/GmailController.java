@@ -1,5 +1,6 @@
 package com.subscription_manager.controller;
 
+import com.google.api.client.googleapis.json.GoogleJsonResponseException;
 import com.google.api.services.gmail.Gmail;
 import com.subscription_manager.configuration.GoogleConfig;
 import com.subscription_manager.model.Subscription;
@@ -121,14 +122,41 @@ public class GmailController {
                     logger.info("[SERVER] SSE complete => {} items found for user {}.", emailList.size(), userKey);
                     emitter.complete();
 
+                } catch (GoogleJsonResponseException e) {
+                    handleGoogleJsonResponseException(e, authentication, emitter);
                 } catch (Exception e) {
-                    e.printStackTrace();
+                    logger.error("[SERVER] Error processing request", e);
+                    try {
+                        emitter.send(Map.of("error", "An error occurred while processing your request."));
+                    } catch (IOException ex) {
+                        logger.error("Error sending error message via SSE", ex);
+                    }
                     emitter.completeWithError(e);
                 }
             }
         }).start();
 
         return emitter;
+    }
+
+    private void handleGoogleJsonResponseException(GoogleJsonResponseException e, OAuth2AuthenticationToken authentication, SseEmitter emitter) {
+        if (e.getStatusCode() == 429) {
+            logger.error("Gmail API rate limit exceeded for user {}: {}", authentication.getName(), e.getMessage());
+            try {
+                emitter.send(Map.of("error", "Gmail API rate limit exceeded. Please try again later."));
+            } catch (IOException ex) {
+                logger.error("Error sending rate limit error message via SSE", ex);
+            }
+            emitter.completeWithError(e);
+        } else {
+            logger.error("[SERVER] Error processing request", e);
+            try {
+                emitter.send(Map.of("error", "An error occurred while processing your request."));
+            } catch (IOException ex) {
+                logger.error("Error sending generic error message via SSE", ex);
+            }
+            emitter.completeWithError(e);
+        }
     }
 
     private static List<Map<String, Object>> getMaps(List<Subscription> subs) {
