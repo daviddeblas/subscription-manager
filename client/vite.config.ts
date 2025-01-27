@@ -6,7 +6,10 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'http://localhost:8080', // TODO: après le déploiement changer la target
+        // TODO
+        // http://localhost:8080
+        // https://subscription-manager-wpds.onrender.com
+        target: 'https://subscription-manager-wpds.onrender.com',
         changeOrigin: true,
         secure: false,
         rewrite: (path) => path.replace(/^\/api/, ''),

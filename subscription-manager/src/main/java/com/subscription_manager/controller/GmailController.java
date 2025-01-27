@@ -57,8 +57,11 @@ public class GmailController {
      * @param authentication OAuth2 authentication token
      * @return SseEmitter streaming the subscription data and progress
      */
+    // TODO
+    // LOCAL: http://localhost:5173
+    // PRODUCTION: subscription-manager-ten.vercel.app
     @GetMapping(value = "/emails", produces = MediaType.TEXT_EVENT_STREAM_VALUE)
-    @CrossOrigin(origins = "http://localhost:5173", allowCredentials = "true")
+    @CrossOrigin(origins = "subscription-manager-ten.vercel.app", allowCredentials = "true")
     public SseEmitter listEmails(OAuth2AuthenticationToken authentication) {
 
         logger.info("[SERVER] /api/emails SSE invoked.");

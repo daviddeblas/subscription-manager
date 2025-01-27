@@ -13,8 +13,10 @@ function SubscriptionPage() {
         console.log('[CLIENT] SubscriptionPage mounted.');
         setIsLoading(true);
 
-        // Ouvre la connexion SSE
-        const eventSource = new EventSource('http://localhost:8080/api/emails', {
+        // TODO
+        // http://localhost:8080/api/emails
+        // https://subscription-manager-wpds.onrender.com/api/emails
+        const eventSource = new EventSource('https://subscription-manager-wpds.onrender.com/api/emails', {
             withCredentials: true
         });
 
@@ -33,11 +35,11 @@ function SubscriptionPage() {
                 setProgress(null);
                 eventSource.close();
             }
-            // Error ?
+
             else if (data.error) {
                 console.error('[CLIENT] SSE error =>', data.error);
             }
-            // Info ?
+
             else if (data.info) {
                 console.log('[CLIENT] SSE info =>', data.info);
             }

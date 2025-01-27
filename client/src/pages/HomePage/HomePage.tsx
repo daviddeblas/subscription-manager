@@ -12,8 +12,10 @@ function HomePage() {
                     To get started, connect your Gmail account.
                 </p>
 
-                {/* Enlever http://localhost:8080/ lorsque l'app sera déployé !!! */}
-                <a href="http://localhost:8080/oauth2/authorization/google">
+                {/* Todo */}
+                {/* http://localhost:8080/oauth2/authorization/google */}
+                {/* https://subscription-manager-wpds.onrender.com//oauth2/authorization/google */}
+                <a href="https://subscription-manager-wpds.onrender.com//oauth2/authorization/google">
                     <button className="connect-button">Connect with Google</button>
                 </a>
             </div>

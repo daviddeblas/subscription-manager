@@ -29,7 +29,7 @@ public class SecurityConfig {
                 // Local      : http://localhost:5173/subscriptions
                 // Production : https://subscription-manager-ten.vercel.app/subscriptions
                 .oauth2Login(oauth2 -> oauth2
-                        .defaultSuccessUrl("http://localhost:5173/subscriptions", true)
+                        .defaultSuccessUrl("https://subscription-manager-ten.vercel.app/subscriptions", true)
                 )
 
                 .exceptionHandling(exceptions -> exceptions
