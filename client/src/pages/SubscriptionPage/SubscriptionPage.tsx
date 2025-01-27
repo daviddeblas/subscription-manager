@@ -1,13 +1,8 @@
 import { useState, useEffect } from 'react';
 import SubscriptionList from '../../component/SubscriptionList';
 import './SubscriptionPage.css';
+import {EmailData} from "../../interface/types.ts";
 
-type EmailData = {
-    id: string;
-    subject: string;
-    from: string;
-    unsubscribeLinks?: string[];
-};
 
 function SubscriptionPage() {
     const [emails, setEmails] = useState<EmailData[]>([]);

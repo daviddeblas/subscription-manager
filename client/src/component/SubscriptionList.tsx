@@ -1,11 +1,5 @@
 import './SubscriptionList.css';
-
-type EmailData = {
-    brandName: string;
-    fromAddress: string;
-    subject?: string;
-    unsubscribeLink: string;
-};
+import {EmailData} from "../interface/types.ts";
 
 interface SubscriptionListProps {
     emails: EmailData[];
