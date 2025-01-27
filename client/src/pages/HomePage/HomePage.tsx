@@ -15,7 +15,7 @@ function HomePage() {
                 {/* Todo */}
                 {/* http://localhost:8080/oauth2/authorization/google */}
                 {/* https://subscription-manager-wpds.onrender.com//oauth2/authorization/google */}
-                <a href="https://subscription-manager-wpds.onrender.com//oauth2/authorization/google">
+                <a href="https://subscription-manager-wpds.onrender.com/oauth2/authorization/google">
                     <button className="connect-button">Connect with Google</button>
                 </a>
             </div>
