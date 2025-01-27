@@ -63,6 +63,9 @@ public class GmailController {
     @GetMapping(value = "/emails", produces = MediaType.TEXT_EVENT_STREAM_VALUE)
     @CrossOrigin(origins = "subscription-manager-ten.vercel.app", allowCredentials = "true")
     public SseEmitter listEmails(OAuth2AuthenticationToken authentication) {
+        if (authentication == null) {
+            throw new IllegalStateException("Authentication token is null");
+        }
 
         logger.info("[SERVER] /api/emails SSE invoked.");
         SseEmitter emitter = new SseEmitter(0L);
