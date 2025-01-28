@@ -19,7 +19,6 @@ This project is a personal side initiative and is fully open source.
 - [Project Structure](#project-structure)
    - [Client](#client)
    - [Server](#server)
-   - 
 
 
 ## 🌟 Features
