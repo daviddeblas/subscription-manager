@@ -1,5 +1,3 @@
-// src/pages/HomePage/HomePage.jsx
-
 import './HomePage.css';
 
 function HomePage() {

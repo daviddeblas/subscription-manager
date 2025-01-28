@@ -1,5 +1,3 @@
-// src/pages/PrivacyPolicy/PrivacyPolicy.jsx
-
 import './PrivacyPolicy.css';
 
 function PrivacyPolicy() {
