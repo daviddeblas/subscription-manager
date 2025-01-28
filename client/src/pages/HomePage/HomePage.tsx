@@ -29,6 +29,9 @@ function HomePage() {
                 <p className="homepage-instruction">
                     To get started, connect your Gmail account by clicking the button below.
                 </p>
+                <p className="homepage-note">
+                    Note: The server is hosted on a free provider, so resources are limited and scans may take several minutes.
+                </p>
 
                 {/* Todo */}
                 {/* http://localhost:8080/oauth2/authorization/google */}
@@ -36,6 +39,7 @@ function HomePage() {
                 <a href="https://subscription-manager-wpds.onrender.com/oauth2/authorization/google">
                     <button className="connect-button">Connect with Google</button>
                 </a>
+
             </div>
 
             <div className="privacy-section">

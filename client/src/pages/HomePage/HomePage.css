@@ -58,7 +58,14 @@
 .homepage-instruction {
     color: #6b7280;
     font-size: 1rem;
-    margin-bottom: 2rem;
+}
+
+.homepage-note {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #6b7280;
+    font-style: italic;
+    margin-bottom: 1rem;
 }
 
 .connect-button {
