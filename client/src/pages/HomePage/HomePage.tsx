@@ -61,7 +61,9 @@ function HomePage() {
                     <li><strong>Compliance with Gmail’s Privacy Policies</strong>: I strictly adhere to Gmail’s privacy
                         policies, ensuring that your personal information remains protected at all times.</li>
                 </ul>
-                <p>For more details, please refer to my <a href="/privacy-policy">Privacy Policy</a>.</p>
+                <p>For more details, please refer to the <a href="/privacy-policy">Privacy Policy </a>
+                    and the<a href="/terms-of-service"> Terms of Service</a>.
+                </p>
             </div>
 
             {/* Footer */}
