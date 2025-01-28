@@ -9,8 +9,6 @@ directly from your **Gmail account**.
 - [Performance](#performance)
 - [Data Usage and Privacy](#data-usage-and-privacy)
 - [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## 🌟 **Features**
 - **Gmail Analysis**: Scan your inbox to identify all newsletters you are subscribed to.
@@ -38,7 +36,8 @@ is transmitted in an encrypted manner.
 - **Compliance with Gmail’s Privacy Policies**: We strictly adhere to Gmail’s privacy policies, ensuring that your 
 personal information remains protected at all times.
 
-We also invite you to review our [Privacy Policy](#) on our website for more detailed information.
+We also invite you to review our [Privacy Policy](https://subscription-manager-ten.vercel.app/privacy-policy) 
+on our website for more detailed information.
 
 ## 🛠️ **Technologies Used**
 - **Frontend**: React.js, Vite
@@ -48,6 +47,6 @@ We also invite you to review our [Privacy Policy](#) on our website for more det
 
 ---
 
-**Subscription Manager** is designed to simplify the management of your subscriptions while respecting your privacy. 
+**Subscription Manager** is designed to simplify the management of your subscriptions. 
 Thank you for your trust, and feel free to contact me with any questions or suggestions!
 
