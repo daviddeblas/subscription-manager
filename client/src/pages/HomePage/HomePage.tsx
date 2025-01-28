@@ -36,8 +36,14 @@ function HomePage() {
                 {/* Todo */}
                 {/* http://localhost:8080/oauth2/authorization/google */}
                 {/* https://subscription-manager-wpds.onrender.com/oauth2/authorization/google */}
-                <a href="https://subscription-manager-wpds.onrender.com/oauth2/authorization/google">
-                    <button className="connect-button">Connect with Google</button>
+                <a href="https://subscription-manager-wpds.onrender.com/oauth2/authorization/google" className="google-signin-button">
+                    <svg className="google-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 533.5 544.3">
+                        <path d="M533.5 278.4c0-18.5-1.6-37.2-4.7-55.1H272v104.3h147.4c-6.3 34-25.3 62.7-53.9 82v68.1h87.1c50.7-46.7 80.3-115.4 80.3-198.3z" fill="#4285F4"/>
+                        <path d="M272 544.3c72.4 0 133.2-23.9 177.6-64.9l-87.1-68.1c-24.1 16.2-55.2 25.8-90.5 25.8-69.5 0-128.3-46.9-149.3-110.3H34.5v69.3C78.9 490.4 167.1 544.3 272 544.3z" fill="#34A853"/>
+                        <path d="M122.7 324.5c-10.8-32.2-10.8-66.7 0-98.9V156.3H34.5c-37.8 75.5-37.8 164.4 0 239.9l88.2-71.7z" fill="#FBBC05"/>
+                        <path d="M272 109.7c38.7 0 73.4 13.3 101.3 39.4l75.5-75.5C404.9 24.5 344.1 0 272 0 167.1 0 78.9 53.9 34.5 156.3l88.2 71.7C143.7 156.6 202.5 109.7 272 109.7z" fill="#EA4335"/>
+                    </svg>
+                    <span className="google-text">Sign in with Google</span>
                 </a>
 
             </div>
