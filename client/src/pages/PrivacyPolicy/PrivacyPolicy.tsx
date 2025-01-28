@@ -64,15 +64,23 @@ function PrivacyPolicy() {
                 </section>
 
                 <section className="privacy-section">
-                    <h2>7. Changes to This Privacy Policy</h2>
+                    <h2>7. Data Usage Limitations</h2>
                     <p>
-                        I may update my Privacy Policy from time to time. I will notify you of any changes by posting
-                        the new Privacy Policy on this page.
+                        I do not transfer, sell, or use your data for advertising, loan purposes, or any other unauthorized uses.
                     </p>
                 </section>
 
                 <section className="privacy-section">
-                    <h2>8. Contact Me</h2>
+                    <h2>8. Transparency and Open Source Verification</h2>
+                    <p>
+                        As an open source project, the source code of Subscription Manager is publicly available on
+                        <a href="https://github.com/daviddeblas/subscription-manager/tree/master" target="_blank" rel="noopener noreferrer"> GitHub</a>.
+                        So you can easily review the code to verify how your data is accessed, used, and handled.
+                    </p>
+                </section>
+
+                <section className="privacy-section">
+                    <h2>9. Contact Me</h2>
                     <p>
                         If you have any questions about this Privacy Policy, please contact me at
                         <a href="mailto:daviddeblas@protonmail.com"> daviddeblas@protonmail.com</a>.
