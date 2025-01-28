@@ -1,0 +1,105 @@
+.privacy-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f9fafb;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333333;
+    padding: 20px;
+}
+
+.privacy-header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.privacy-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #1f2937;
+}
+
+.privacy-header p {
+    font-size: 1rem;
+    color: #6b7280;
+}
+
+.privacy-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+.privacy-section {
+    background-color: #ffffff;
+    max-width: 800px;
+    width: 100%;
+    padding: 2rem 3rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    margin-bottom: 2rem;
+}
+
+.privacy-section h2 {
+    color: #1f2937;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.privacy-section p {
+    color: #4b5563;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.privacy-section ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.privacy-section li {
+    color: #4b5563;
+    margin-bottom: 0.5rem;
+}
+
+.privacy-section a {
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.privacy-section a:hover {
+    text-decoration: underline;
+}
+
+.privacy-footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-top: 1px solid #e5e7eb;
+    color: #9ca3af;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .privacy-section {
+        padding: 1.5rem 2rem;
+        max-width: 90%;
+    }
+
+    .privacy-section h2 {
+        font-size: 1.4rem;
+    }
+
+    .privacy-section li {
+        font-size: 0.95rem;
+    }
+}
