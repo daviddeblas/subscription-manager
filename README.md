@@ -74,7 +74,7 @@ client/
 │   │   ├── types.ts                 # Email data interface
 │   ├── App.tsx                      # Root component of the React app
 │   ├── index.tsx                    # Entry point of the application
-│   └── vite-env.d.ts           # TypeScript environment configuration
+│   └── vite-env.d.ts                # TypeScript environment configuration
 ├── package.json                     # Project metadata and dependencies
 ├── tsconfig.json                    # TypeScript configuration file
 └── README.md                        # Documentation for the client application
