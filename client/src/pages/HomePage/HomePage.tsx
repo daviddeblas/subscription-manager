@@ -32,6 +32,16 @@ function HomePage() {
                 <p className="homepage-note">
                     Note: The server is hosted on a free provider, so resources are limited and scans may take several minutes.
                 </p>
+                <p className="homepage-note">
+                    <strong>Important:</strong> Unfortunately, the only way to use the application is to provide your Gmail address via email at&nbsp;
+                    <a href="mailto:daviddeblas@protonmail.com">daviddeblas@protonmail.com</a>.
+                    <br /><br />
+                    This is because I have to run the Google environment in test mode, which means I must manually add each email address for testing.
+                    I'm forced to do this since Google requires an expensive security certification (more than 500$) to launch the application in a production environment.
+                    <br /><br />
+                    Thank you for your understanding.
+                </p>
+
 
                 {/* Todo */}
                 {/* http://localhost:8080/oauth2/authorization/google */}
