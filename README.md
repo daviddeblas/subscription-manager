@@ -19,6 +19,7 @@ This project is a personal side initiative and is fully open source.
 - [Project Structure](#project-structure)
    - [Client](#client)
    - [Server](#server)
+- [Local Setup](#local-setup)
 
 
 ## 🌟 Features
@@ -47,8 +48,8 @@ For example scanning 2000 mails can take 7 minutes
 - **Compliance with Gmail’s Privacy Policies**: We strictly adhere to Gmail’s privacy policies, ensuring that your
   personal information remains protected at all times.
 
-We also invite you to review our [Privacy Policy](https://subscription-manager-ten.vercel.app/privacy-policy)
-on our website for more detailed information.
+You can review the [Privacy Policy](https://subscription-manager-ten.vercel.app/privacy-policy)
+on the website for more detailed information.
 
 ## 🛠️ **Technologies Used**
 - **Frontend**: React.js, Vite
@@ -105,3 +106,43 @@ server/
 ├── pom.xml                                 # Maven configuration file for dependencies and build settings
 └── README.md                               # Documentation specific to the server-side application
 ```
+
+## **Local Setup**
+To run the project locally, follow these steps:
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/daviddeblas/subscription-manager.git
+   cd subscription-manager
+   
+2. **Create a Google Clood Console Project**
+
+   - Go to the [Google Cloud Console](https://console.cloud.google.com/)
+   - Create a new project
+   - Enable the Gmail API
+
+
+3. **Configure the OAuth2 credentials**
+- Create OAuth 2.0 credentials (Client ID and Client Secret) for a web application.
+- When setting up the OAuth consent screen, include the following scopes:
+  - `https://www.googleapis.com/auth/userinfo.email`
+  - `https://www.googleapis.com/auth/userinfo.profile`
+  - `https://www.googleapis.com/auth/gmail.readonly`
+
+4. **Set Up Environment Variables**
+- In the `application.properties` file, replace the placeholders with your OAuth2 credentials:
+  - `spring.security.oauth2.client.registration.google.client-id=YOUR_CLIENT_ID`
+  -  `spring.security.oauth2.client.registration.google.client-secret=YOUR_CLIENT_SECRET`
+  -  `spring.security.oauth2.client.registration.google.redirect-uri=http://localhost:8080/login/oauth2/code/google`
+
+5. **Navigate across each TODO and change the URL below to the localhost one**
+   - You have to do this in the `client` folder and the `subscription-manager` folder
+   
+
+6. **Run the server and the client**
+   - In the `client` folder run `npm install` and then `npm run dev`
+   - In the `subscription-manager` folder run `mvn spring-boot:run`
+
+
+7. **Access the Application**
+   - Now you can access the application at `http://localhost:5173/`
